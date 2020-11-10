@@ -13,6 +13,12 @@ public class Main {
             System.out.println(palindrome + " is a palindrome");
         else
             System.out.println(palindrome + " is not a palindrome");
+
+        System.out.println("Would you like to check another word to see if it is a palindrome?");
+        String response = scanner.next();
+        if(response.equalsIgnoreCase ("yes")){
+            main(null);
+        }
     }
 
     static boolean isPalindrome(String str) {
